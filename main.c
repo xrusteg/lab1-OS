@@ -118,7 +118,7 @@ int main (int argc, char *argv[])
 		printf("cannot create output file %s\n", dir);
 		exit(0);
 	}
-	
+	///
 	
 	stat(dir, &statbuf);
 	modes = statbuf.st_mode;

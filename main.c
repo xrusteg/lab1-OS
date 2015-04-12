@@ -121,7 +121,7 @@ int unpack(char *file)
 		}
 		while (n) {
 			//printf("%d\n", n);
-			//if (n < BUFSIZE) {break;}
+			if (n < BUFSIZE) {break;}
 			n = read(in, buffer, n);
 			//printf("1\n");
 			check = write(out, buffer, n);
